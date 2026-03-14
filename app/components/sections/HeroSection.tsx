@@ -97,8 +97,9 @@ const HeroSection = () => {
             </Link>
 
             <Link
-              href="https://drive.google.com/file/d/1YrQZ6FtlcsfWGfxCRjym1iVBd4BCJ4kH/view?usp=sharing"
+              href="/phot_kosee_resume_2026.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               passHref
               className="hidden xs:block"
             >
@@ -116,8 +117,9 @@ const HeroSection = () => {
             </Link>
 
             <Link
-              href="https://drive.google.com/file/d/1YrQZ6FtlcsfWGfxCRjym1iVBd4BCJ4kH/view?usp=sharing"
+              href="/phot_kosee_resume_2026.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               passHref
               className="xs:hidden"
             >
