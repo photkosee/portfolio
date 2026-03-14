@@ -6,6 +6,7 @@ const educations = [
     logo: "./logos/unsw.webp",
     description: [
       "Winner of the UNSW College Hackathon 2024",
+      "IT Subcommittee for UNSW Tabletop Games Society (Web Development)",
     ],
   },
   {
