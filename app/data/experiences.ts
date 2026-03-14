@@ -2,7 +2,7 @@ const experiences = [
   {
     company: "Woolworths Group",
     role: "Software Engineer (Frontend Focus)",
-    year: "Jan 2025 - Feb 2026",
+    year: "Jan 2025 - Mar 2026",
     logo: "./logos/woolworths.webp",
     size: "w-[40px] h-[40px]",
     description: ["Developed and deployed full-stack internal tools using React with TypeScript and FastAPI, hosted on Google App Engine and Cloud Run"],
