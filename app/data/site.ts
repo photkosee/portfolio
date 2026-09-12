@@ -3,6 +3,9 @@ export const SITE_URL = "https://photkosee.vercel.app";
 export const SITE_NAME = "Phot Koseekrainiramon";
 export const SITE_NAME_TH = "พจน์ โกสีย์ไกรนิรมล";
 
+// Bump when content changes; keep public/sitemap.xml <lastmod> in sync.
+export const SITE_LAST_MODIFIED = "2026-09-12";
+
 export const SITE_DESCRIPTION =
   `Portfolio of Phot Koseekrainiramon (${SITE_NAME_TH}), a software engineer ` +
   `building web applications. Personal projects, experience, and resume.`;
@@ -23,6 +26,8 @@ export const personSchema = {
       givenName: "Phot",
       familyName: "Koseekrainiramon",
       jobTitle: "Software Engineer",
+      description:
+        "Software engineer building web applications, front-end and back-end.",
       email: "mailto:phot.kosee@gmail.com",
       url: SITE_URL,
       knowsLanguage: ["en", "th"],
@@ -59,7 +64,11 @@ export const personSchema = {
       url: SITE_URL,
       name: `${SITE_NAME} | Portfolio`,
       isPartOf: { "@id": `${SITE_URL}/#website` },
-      about: { "@id": `${SITE_URL}/#person` },
+      // Google's ProfilePage spec requires mainEntity specifically; `about`
+      // is valid schema.org but does not satisfy it.
+      mainEntity: { "@id": `${SITE_URL}/#person` },
+      dateCreated: "2024-10-17",
+      dateModified: SITE_LAST_MODIFIED,
       inLanguage: "en",
     },
   ],
